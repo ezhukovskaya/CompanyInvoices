@@ -17,15 +17,15 @@ public class CompanyInvoicesPage {
     private Label itemLabel = getItemNameLabel(4, "Item");
     private Label itemPrice = getItemTotalCostLabel(4, "Item Total");
 
-    private Label getItemNameLabel(int itemNumber, String elementName){
+    private Label getItemNameLabel(int itemNumber, String elementName) {
         return new Label(By.xpath(String.format("//tbody[contains(@class, 'gl-3')][%d]//td[contains(@class, 'cal fc')]", itemNumber)), elementName);
     }
 
-    private Label getItemTotalCostLabel(int itemNumber, String elementName){
+    private Label getItemTotalCostLabel(int itemNumber, String elementName) {
         return new Label(By.xpath(String.format("//tbody[contains(@class, 'gl-3')][%d]//td[contains(@class, 'car')][last()-1]", itemNumber)), elementName);
     }
 
-    private Label getGradeWeightLabel(String className, String elementName){
+    private Label getGradeWeightLabel(String className, String elementName) {
         return new Label(By.xpath(String.format("//tbody[contains(@class, 'gl-2')][2]//td[contains(@class, '%s')]", className)), elementName);
     }
 }

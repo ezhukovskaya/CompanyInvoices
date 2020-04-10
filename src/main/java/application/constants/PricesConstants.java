@@ -6,5 +6,5 @@ public class PricesConstants {
     public static final String PER_TONNE = "per tonne";
     public static final String PER_TONNE_PRICE = "£4.60";
     public static final String ITEM = "Item";
-    public static final String ITEM_PRICE = "110.0";
+    public static final String ITEM_PRICE = "110.00";
 }
